@@ -32,6 +32,10 @@ class MessageDialogFragment : DialogFragment() {
 
     private var onDismiss: (() -> Unit)? = null
 
+    override fun getTheme(): Int {
+        return R.style.AppTheme_Dialog
+    }
+
     companion object {
         fun newInstance(title: String, message: String): MessageDialogFragment {
             val frag = MessageDialogFragment()
