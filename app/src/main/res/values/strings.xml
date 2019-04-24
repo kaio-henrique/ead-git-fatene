@@ -5,4 +5,5 @@
     <string name="txt_ok">ok</string>
     <string name="txt_message_dialog">Hey, here is an dialog! Congratulations</string>
     <string name="txt_hello">Hello, there!</string>
+    <string name="txt_show">Show</string>
 </resources>
