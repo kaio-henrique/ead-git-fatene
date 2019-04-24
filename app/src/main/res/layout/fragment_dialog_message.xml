@@ -21,7 +21,8 @@
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
 
         <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/messageDialog"
@@ -29,15 +30,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="16dp"
                 android:textSize="16sp"
-                app:layout_constraintStart_toStartOf="@+id/titleDialog"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/titleDialog"/>
 
         <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/actionOk"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="42dp"
+                android:layout_height="38dp"
+                android:layout_marginVertical="10dp"
                 android:text="@string/txt_ok"
-                android:textSize="18sp"
                 android:textColor="@color/colorPrimary"
                 android:background="@android:color/transparent"
                 app:layout_constraintTop_toBottomOf="@+id/messageDialog"
